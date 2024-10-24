@@ -1,0 +1,12 @@
+[submodule "Packages/SASPackages-Utilities"]
+	path = Packages/SASPackages-Utilities
+	url = https://github.com/SAS-Games/SASPackages-Utilities.git
+[submodule "Packages/SAS-ScriptableTypes"]
+	path = Packages/SAS-ScriptableTypes
+	url = https://github.com/SAS-Games/SAS-ScriptableTypes.git
+[submodule "Packages/SASPackages-StateMachine"]
+	path = Packages/SASPackages-StateMachine
+	url = https://github.com/SAS-Games/SASPackages-StateMachine.git
+[submodule "Packages/SAS-StateMachineCharacterControlle"]
+	path = Packages/SAS-StateMachineCharacterControlle
+	url = https://github.com/SAS-Games/StateMachineCharacterController.git
