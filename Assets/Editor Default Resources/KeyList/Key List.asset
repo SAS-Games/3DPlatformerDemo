@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7755a86a7d06cb242a2c520fa349e5aa, type: 3}
   m_Name: Key List
   m_EditorClassIdentifier: 
-  values: []
+  values:
+  - MoveSpeed
+  - VerticalPull
