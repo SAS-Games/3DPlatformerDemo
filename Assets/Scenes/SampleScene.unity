@@ -981,6 +981,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1685250647, guid: 6590d4eca4ab3de42a2372b05d8cc2e2, type: 3}
+      propertyPath: m_PauseOnOpen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685250647, guid: 6590d4eca4ab3de42a2372b05d8cc2e2, type: 3}
       propertyPath: m_Commands.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -1053,6 +1057,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1811982555932069146, guid: 9534164de4a4d2c4bb2640f502aca5ad, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811982555932069146, guid: 9534164de4a4d2c4bb2640f502aca5ad, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811982555932069146, guid: 9534164de4a4d2c4bb2640f502aca5ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 7062352836339495342, guid: 9534164de4a4d2c4bb2640f502aca5ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1093,8 +1109,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7923982185587658305, guid: 9534164de4a4d2c4bb2640f502aca5ad, type: 3}
+      propertyPath: m_Configs.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923982185587658305, guid: 9534164de4a4d2c4bb2640f502aca5ad, type: 3}
+      propertyPath: m_Configs.Array.data[3].data
+      value: 
+      objectReference: {fileID: 11400000, guid: d22e8c3daade7f141a2318700f70e418, type: 2}
+    - target: {fileID: 7923982185587658305, guid: 9534164de4a4d2c4bb2640f502aca5ad, type: 3}
+      propertyPath: m_Configs.Array.data[4].data
+      value: 
+      objectReference: {fileID: 11400000, guid: db0023617f172e84e81b58718ca0c34a, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1430255964473724378, guid: 9534164de4a4d2c4bb2640f502aca5ad, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9534164de4a4d2c4bb2640f502aca5ad, type: 3}
