@@ -58,7 +58,7 @@ CharacterController:
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.05
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &7923982185587658305
@@ -101,6 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BlackboardData: {fileID: 11400000, guid: 2f8c8a1e1d9b11b4f8ba2d7619d91d56, type: 2}
+  <WallLayer>k__BackingField:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &290689403177623934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InputConfig: {fileID: 11400000, guid: 65d89e83670e7184d97e74fc4d5b6efe, type: 2}
-  m_targetSpeedReachMultiplier: 10
+  m_targetSpeedReachMultiplier: 30
 --- !u!1001 &6944067237830880295
 PrefabInstance:
   m_ObjectHideFlags: 0
