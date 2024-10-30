@@ -18,3 +18,5 @@ MonoBehaviour:
   - TurnSmoothTime
   - Descending
   - DashSpeed
+  - CoyoteTime
+  - MaxJumpCount
