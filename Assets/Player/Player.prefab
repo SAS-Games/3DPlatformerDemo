@@ -74,6 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Controller: {fileID: 11400000, guid: f15cd9968dbf8bc4b8bb8387504d92b1, type: 2}
+  m_BlackboardData: {fileID: 11400000, guid: 2f8c8a1e1d9b11b4f8ba2d7619d91d56, type: 2}
   m_Configs:
   - data: {fileID: 11400000, guid: 7186b599eb5218a4fa51d0e38b6125cb, type: 2}
     name: 
@@ -85,7 +86,9 @@ MonoBehaviour:
     name: 
   - data: {fileID: 11400000, guid: db0023617f172e84e81b58718ca0c34a, type: 2}
     name: 
-  m_AutoInitialize: 0
+  - data: {fileID: 11400000, guid: 3e21b21d428e63240a418b8d0ce5e675, type: 2}
+    name: 
+  m_AutoInitialize: 1
   ShowStateLog: 0
   LogPosition: 0
 --- !u!114 &5197292168421665821
@@ -100,7 +103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0220ca7ca8919ef46997cf0b9af0db83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BlackboardData: {fileID: 11400000, guid: 2f8c8a1e1d9b11b4f8ba2d7619d91d56, type: 2}
   <WallLayer>k__BackingField:
     serializedVersion: 2
     m_Bits: 128
