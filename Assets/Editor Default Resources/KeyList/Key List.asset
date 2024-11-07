@@ -20,3 +20,4 @@ MonoBehaviour:
   - DashSpeed
   - CoyoteTime
   - MaxJumpCount
+  - ClimbSpeed
