@@ -21,3 +21,10 @@ MonoBehaviour:
   - CoyoteTime
   - MaxJumpCount
   - ClimbSpeed
+  - Land
+  - Jump
+  - Fall
+  - Speed
+  - LocoMotion
+  - Dash
+  - DashExit
