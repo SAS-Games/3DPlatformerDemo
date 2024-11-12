@@ -35,6 +35,14 @@
         "com.sas.utilities": "1.0.0"
       }
     },
+    "com.sas.tweenmanagement": {
+      "version": "file:SASPackages-Tween",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.sas.utilities": "1.0.0"
+      }
+    },
     "com.sas.utilities": {
       "version": "file:SASPackages-Utilities",
       "depth": 0,

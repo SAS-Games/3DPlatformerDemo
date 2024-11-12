@@ -14,3 +14,6 @@
 	path = Packages/SASPackage-DevUtilities
 	url = https://github.com/SAS-Games/SASPackage-DevUtilities.git
 
+[submodule "Packages/SASPackages-Tween"]
+	path = Packages/SASPackages-Tween
+	url = https://github.com/SAS-Games/SASPackages-Tween.git
