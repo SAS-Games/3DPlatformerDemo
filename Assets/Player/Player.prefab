@@ -55,12 +55,12 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 1.8
-  m_Radius: 0.2
-  m_SlopeLimit: 60
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.05
+  m_Radius: 0.3
+  m_SlopeLimit: 45
+  m_StepOffset: 0.2
+  m_SkinWidth: 0.03
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0.05, y: 0.9, z: 0}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!114 &7923982185587658305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
     m_Bits: 256
   m_GroundLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1
   movementVector: {x: 0, y: 0, z: 0}
 --- !u!114 &290689403177623934
 MonoBehaviour:

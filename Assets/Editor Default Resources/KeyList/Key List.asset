@@ -28,3 +28,4 @@ MonoBehaviour:
   - LocoMotion
   - Dash
   - DashExit
+  - SlideSpeed
