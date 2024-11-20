@@ -10,7 +10,6 @@ public class OnTriggerHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.name);
         if (string.IsNullOrEmpty(m_OnEnterMessage))
             return;
 
