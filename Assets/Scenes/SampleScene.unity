@@ -1509,7 +1509,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1685250647, guid: 6590d4eca4ab3de42a2372b05d8cc2e2, type: 3}
       propertyPath: m_PauseOnOpen
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1685250647, guid: 6590d4eca4ab3de42a2372b05d8cc2e2, type: 3}
       propertyPath: m_Commands.Array.size
@@ -2443,6 +2443,18 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 754113718}
+    - target: {fileID: 8393636651239564634, guid: b75c07721e51b1b42bd196e94f995a7f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9396927
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393636651239564634, guid: b75c07721e51b1b42bd196e94f995a7f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.3420201
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393636651239564634, guid: b75c07721e51b1b42bd196e94f995a7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 8852310846342838460, guid: b75c07721e51b1b42bd196e94f995a7f, type: 3}
       propertyPath: m_Mesh
       value: 
