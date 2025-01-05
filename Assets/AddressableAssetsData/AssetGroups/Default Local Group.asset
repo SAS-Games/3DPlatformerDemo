@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_GUID: dc70226ba22930a469414d03f5a50b56
+  m_SerializeEntries:
+  - m_GUID: 4145c7e5c852ceb468e9f35a36e63b80
+    m_Address: Assets/WeaponSystem/Scripts/Easy Camera Shake/Demo/Demo.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 41c655ce456d4e140934d08b1c9ac956
+    m_Address: Assets/UI/UI.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 687c837c395e80042859fd2171e6bedc
+    m_Address: Assets/Scenes/GameMode1/Lvl 1.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a6683f485156ad44b62356ae4ca61a4
+    m_Address: Assets/Scenes/GameMode1/Lvl 3.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae08dfe486f4afe4397b16253bffd28c
+    m_Address: Assets/Scenes/GameMode1/Lvl 2.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d487ba17e48fbdf4d8cb21cd110d3d5a
+    m_Address: Assets/Scenes/GameMode1/Lvl 6.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dc557a0da406f5545875c7e6d6220cc7
+    m_Address: Assets/Scenes/GameMode1/Lvl 4.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0b33687f161a0c4e99c9cb33388df3f
+    m_Address: Assets/Scenes/GameMode1/Lvl 5.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8f728ae088ffb54d84bd58b6d447d14
+    m_Address: Assets/Scenes/GameMode1/PersistanceActiveScene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ad6d9b75821e221469c2db82f51bf1cf, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a1e614d0750b3c247a43cf55311d2be6, type: 2}
+    - {fileID: 11400000, guid: 9b719b1a8209b9748af51d700d1b0754, type: 2}
