@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 019d158f4d9962446ac2d7236c4050ab, type: 3}
+  m_Name: Scene Groups Config
+  m_EditorClassIdentifier: 
+  m_SceneGroups:
+  - m_Name: Persistent
+    Scenes:
+    - Reference:
+        asset: {fileID: 102900000, guid: e8f728ae088ffb54d84bd58b6d447d14, type: 3}
+        guid: e8f728ae088ffb54d84bd58b6d447d14
+      SceneType: 0
+      IsOptinal: 0
+  - m_Name: LinearSection
+    Scenes:
+    - Reference:
+        asset: {fileID: 102900000, guid: d487ba17e48fbdf4d8cb21cd110d3d5a, type: 3}
+        guid: d487ba17e48fbdf4d8cb21cd110d3d5a
+      SceneType: 1
+      IsOptinal: 0
+    - Reference:
+        asset: {fileID: 102900000, guid: 41c655ce456d4e140934d08b1c9ac956, type: 3}
+        guid: 41c655ce456d4e140934d08b1c9ac956
+      SceneType: 3
+      IsOptinal: 0
+  - m_Name: Challenenge
+    Scenes:
+    - Reference:
+        asset: {fileID: 102900000, guid: c5f4a9658803981469ebe90da3bd7fbf, type: 3}
+        guid: c5f4a9658803981469ebe90da3bd7fbf
+      SceneType: 1
+      IsOptinal: 0
+    - Reference:
+        asset: {fileID: 102900000, guid: 41c655ce456d4e140934d08b1c9ac956, type: 3}
+        guid: 41c655ce456d4e140934d08b1c9ac956
+      SceneType: 3
+      IsOptinal: 0

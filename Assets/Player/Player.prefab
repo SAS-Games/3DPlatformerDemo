@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 290689403177623934}
   - component: {fileID: -7348548362007135620}
   - component: {fileID: 1154382181586453074}
+  - component: {fileID: 7107776420240330034}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -56,13 +57,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 1.5
-  m_Radius: 0.2
+  m_Height: 1.8
+  m_Radius: 0.3
   m_SlopeLimit: 45
   m_StepOffset: 0.25
-  m_SkinWidth: 0.02
+  m_SkinWidth: 0.03
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0.04, y: 0.75, z: 0}
+  m_Center: {x: 0.04, y: 0.9, z: 0}
 --- !u!114 &7923982185587658305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,6 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0220ca7ca8919ef46997cf0b9af0db83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_FreezeZAxis: 1
   <WallLayer>k__BackingField:
     serializedVersion: 2
     m_Bits: 128
@@ -155,6 +157,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b2b561ca0eb2464fbd3b2a435fc1d66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7107776420240330034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517745776564304705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e3ae2131581c840b8d177cf373663a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StartPointName: StartPoint
 --- !u!1 &5873056612919274414
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,15 +220,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2106585151094673546, guid: 31bdf8eb5c2f2a545956e0763ca4c455, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2106585151094673546, guid: 31bdf8eb5c2f2a545956e0763ca4c455, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2106585151094673546, guid: 31bdf8eb5c2f2a545956e0763ca4c455, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2106585151094673546, guid: 31bdf8eb5c2f2a545956e0763ca4c455, type: 3}
       propertyPath: m_LocalPosition.x

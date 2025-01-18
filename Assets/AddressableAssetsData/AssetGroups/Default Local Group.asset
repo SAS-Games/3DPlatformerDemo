@@ -40,6 +40,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5f4a9658803981469ebe90da3bd7fbf
+    m_Address: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/DemoScene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d487ba17e48fbdf4d8cb21cd110d3d5a
     m_Address: Assets/Scenes/GameMode1/Lvl 6.unity
     m_ReadOnly: 0
@@ -56,7 +61,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e8f728ae088ffb54d84bd58b6d447d14
-    m_Address: Assets/Scenes/GameMode1/PersistanceActiveScene.unity
+    m_Address: Assets/Scenes/GameMode1/Persistent.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
