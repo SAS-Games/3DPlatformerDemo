@@ -30,33 +30,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7a6683f485156ad44b62356ae4ca61a4
-    m_Address: Assets/Scenes/GameMode1/Lvl 3.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ae08dfe486f4afe4397b16253bffd28c
-    m_Address: Assets/Scenes/GameMode1/Lvl 2.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c5f4a9658803981469ebe90da3bd7fbf
     m_Address: Assets/POLY STYLE - Platformer Starter Pack/Platformer Starter Pack_URP/Scene/DemoScene.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d487ba17e48fbdf4d8cb21cd110d3d5a
-    m_Address: Assets/Scenes/GameMode1/Lvl 6.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: dc557a0da406f5545875c7e6d6220cc7
-    m_Address: Assets/Scenes/GameMode1/Lvl 4.unity
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e0b33687f161a0c4e99c9cb33388df3f
-    m_Address: Assets/Scenes/GameMode1/Lvl 5.unity
+    m_Address: Assets/Scenes/GameMode1/Lvl 1 Sideways.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
