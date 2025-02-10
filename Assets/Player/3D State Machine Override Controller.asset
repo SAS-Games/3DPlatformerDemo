@@ -21,13 +21,14 @@ MonoBehaviour:
   - original: SAS.StateMachineCharacterController.ResetDashing, AssemblyStateMachineCharacterController,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     overridden: 
-  - original: SAS.StateMachineCharacterController.HorizontalMovement, AssemblyStateMachineCharacterController,
+  - original: SAS.StateMachineCharacterController.HorizontalMovementSideWays, AssemblyStateMachineCharacterController,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    overridden: 
+    overridden: SAS.StateMachineCharacterController.HorizontalMovement, AssemblyStateMachineCharacterController,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   - original: SAS.StateMachineCharacterController.VerticalPull, AssemblyStateMachineCharacterController,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     overridden: 
-  - original: SAS.StateMachineCharacterController.ApplyRotationSideScroll, AssemblyStateMachineCharacterController,
+  - original: SAS.StateMachineCharacterController.ApplyRotationSideWays, AssemblyStateMachineCharacterController,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     overridden: SAS.StateMachineCharacterController.ApplyRotation, AssemblyStateMachineCharacterController,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -49,6 +50,9 @@ MonoBehaviour:
   - original: SAS.StateMachineCharacterController.DashMovement, AssemblyStateMachineCharacterController,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     overridden: 
+  - original: SAS.StateMachineCharacterController.HorizontalMovement, AssemblyStateMachineCharacterController,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    overridden: 
   - original: SAS.StateMachineCharacterController.StopUpwardMovement, AssemblyStateMachineCharacterController,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     overridden: 
@@ -59,9 +63,6 @@ MonoBehaviour:
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     overridden: 
   - original: SAS.StateMachineCharacterController.ClimbNavigation, AssemblyStateMachineCharacterController,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    overridden: 
-  - original: SAS.StateMachineCharacterController.ApplyRotation, AssemblyStateMachineCharacterController,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     overridden: 
   - original: SAS.StateMachineCharacterController.Slide, AssemblyStateMachineCharacterController,
@@ -78,6 +79,9 @@ MonoBehaviour:
     overridden: 
   - original: SAS.StateMachineCharacterController.DecreaseCoyoteTimerCounter, AssemblyStateMachineCharacterController,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    overridden: 
+  - original: AniamatorJumpCount, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
     overridden: 
   - original: SAS.StateMachineCharacterController.DownwardMovement, AssemblyStateMachineCharacterController,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
