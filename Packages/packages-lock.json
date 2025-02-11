@@ -29,6 +29,13 @@
         "com.unity.cinemachine": "2.8.9"
       }
     },
+    "com.sas.library.unirx": {
+      "version": "https://github.com/SAS-Games/UniRx.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "f8ff4db73464bd543cce8acc25ac6d5c267b71c5"
+    },
     "com.sas.scriptabletypes": {
       "version": "file:SAS-ScriptableTypes",
       "depth": 0,

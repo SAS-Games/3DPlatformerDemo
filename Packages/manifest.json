@@ -2,6 +2,7 @@
   "dependencies": {
     "com.eflatun.scenereference": "git+https://github.com/starikcetin/Eflatun.SceneReference.git#4.1.1",
     "com.interhaptics.core_sdk": "https://github.com/Interhaptics/Unity_CoreSDK.git",
+    "com.sas.library.unirx": "https://github.com/SAS-Games/UniRx.git",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.addressables": "2.2.2",
     "com.unity.ai.navigation": "2.0.5",
