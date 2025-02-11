@@ -209,7 +209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2995394572988853326, guid: 45c0c30859c69a341b167a83d2040e6c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 5357537469292147990, guid: 45c0c30859c69a341b167a83d2040e6c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -253,7 +253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5574932385894884242, guid: 45c0c30859c69a341b167a83d2040e6c, type: 3}
       propertyPath: m_Speed
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5574932385894884242, guid: 45c0c30859c69a341b167a83d2040e6c, type: 3}
       propertyPath: m_delay
@@ -732,7 +732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5574932385894884242, guid: 45c0c30859c69a341b167a83d2040e6c, type: 3}
       propertyPath: m_Speed
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5574932385894884242, guid: 45c0c30859c69a341b167a83d2040e6c, type: 3}
       propertyPath: m_delay
@@ -756,7 +756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5574932385894884242, guid: 45c0c30859c69a341b167a83d2040e6c, type: 3}
       propertyPath: m_Waypoints.Array.data[0].y
-      value: -10
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 5574932385894884242, guid: 45c0c30859c69a341b167a83d2040e6c, type: 3}
       propertyPath: m_Waypoints.Array.data[1].x
@@ -2849,7 +2849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5574932385894884242, guid: 45c0c30859c69a341b167a83d2040e6c, type: 3}
       propertyPath: m_Speed
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5574932385894884242, guid: 45c0c30859c69a341b167a83d2040e6c, type: 3}
       propertyPath: m_delay
@@ -2873,7 +2873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5574932385894884242, guid: 45c0c30859c69a341b167a83d2040e6c, type: 3}
       propertyPath: m_Waypoints.Array.data[0].y
-      value: -10
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 5574932385894884242, guid: 45c0c30859c69a341b167a83d2040e6c, type: 3}
       propertyPath: m_Waypoints.Array.data[1].x
