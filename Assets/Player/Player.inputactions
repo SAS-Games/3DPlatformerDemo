@@ -353,6 +353,17 @@
                     "action": "Climb",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b7bb689f-5691-4d95-a194-bd00d5f26be0",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Climb",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
