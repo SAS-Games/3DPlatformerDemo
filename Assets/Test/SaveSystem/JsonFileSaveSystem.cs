@@ -1,5 +1,6 @@
 using SAS.Utilities.TagSystem;
 using System.IO;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class JsonFileSaveSystem : ISaveSystem
@@ -20,19 +21,27 @@ public class JsonFileSaveSystem : ISaveSystem
         File.WriteAllText(filePath, json);
     }
 
-    T ISaveSystem.Load<T>(string fileName)
+
+    async Task<T> ISaveSystem.Load<T>(string fileName)
     {
         string filePath = Path.Combine(DirectoryPath, fileName + ".json");
 
         if (File.Exists(filePath))
         {
-            string json = File.ReadAllText(filePath);
-            return JsonUtility.FromJson<T>(json);
+            string json = await Task.Run(() => File.ReadAllText(filePath));
+
+            if (!string.IsNullOrWhiteSpace(json))
+            {
+                T data = JsonUtility.FromJson<T>(json);
+                if (data != null)
+                    return data;
+            }
         }
 
-        Debug.LogWarning($"File not found: {filePath}");
-        return default;
+        Debug.LogWarning($"File not found or empty: {filePath}");
+        return new T();
     }
+
 
     void IBindable.OnInstanceCreated()
     {

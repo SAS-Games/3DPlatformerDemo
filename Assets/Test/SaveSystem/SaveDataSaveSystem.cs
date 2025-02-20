@@ -1,4 +1,5 @@
 using SAS.Utilities.TagSystem;
+using System.Threading.Tasks;
 
 public class SaveDataSaveSystem : ISaveSystem
 {
@@ -7,7 +8,7 @@ public class SaveDataSaveSystem : ISaveSystem
 
     }
 
-    T ISaveSystem.Load<T>(string fileName)
+    async Task<T> ISaveSystem.Load<T>(string fileName)
     {
 
         //if (!SaveData.DirectoryExists(userId, dirName))
