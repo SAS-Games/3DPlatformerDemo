@@ -17,6 +17,29 @@ public class JsonKeyAttribute : Attribute
 
 public static class JTokenExtensions
 {
+    private static readonly Dictionary<string, Type> _keyTypeCache = new Dictionary<string, Type>();
+
+    static JTokenExtensions()
+    {
+        // Initialize cache at startup
+        var types = AppDomain.CurrentDomain.GetAssemblies()
+            .SelectMany(a => a.GetTypes())
+            .Where(t => t.GetCustomAttribute<JsonKeyAttribute>() != null);
+
+        foreach (var type in types)
+        {
+            var keys = type.GetCustomAttribute<JsonKeyAttribute>().Keys;
+            foreach (var key in keys)
+            {
+                // Mimic FirstOrDefault behavior: first type with the key wins
+                if (!_keyTypeCache.ContainsKey(key))
+                {
+                    _keyTypeCache[key] = type;
+                }
+            }
+        }
+    }
+
     public static object ToObjectRecursive(this JToken token)
     {
         switch (token.Type)
@@ -63,12 +86,8 @@ public static class JTokenExtensions
 
     private static Type InferCustomType(string key)
     {
-        var customType = AppDomain.CurrentDomain.GetAssemblies()
-            .SelectMany(a => a.GetTypes())
-            .FirstOrDefault(t =>
-                t.GetCustomAttribute<JsonKeyAttribute>()?.Keys.Contains(key) == true);
-
-        return customType;
+        _keyTypeCache.TryGetValue(key, out var type);
+        return type;
     }
 
 }

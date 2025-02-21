@@ -5,11 +5,11 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Threading.Tasks;
 using UnityEngine;
 
-public class BinarySaveSystem : ISaveSystem
+public class BinaryFormatterSaveSystem : ISaveSystem
 {
     private readonly string rootDir = Application.persistentDataPath;
 
-    public BinarySaveSystem(IContextBinder _)
+    public BinaryFormatterSaveSystem(IContextBinder _)
     {
 
     }
