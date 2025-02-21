@@ -8,7 +8,12 @@ public class SaveDataSaveSystem : ISaveSystem
 
     }
 
-    async Task<T> ISaveSystem.Load<T>(string fileName)
+    async Task<T> ISaveSystem.Load<T>(int userId, string fileName)
+    {
+        return await ((ISaveSystem)this).Load<T>(userId, "Saves", fileName);
+    }
+
+    async Task<T> ISaveSystem.Load<T>(int userId, string dirName, string fileName)
     {
 
         //if (!SaveData.DirectoryExists(userId, dirName))
@@ -44,8 +49,12 @@ public class SaveDataSaveSystem : ISaveSystem
         return default(T);
     }
 
+    async Task ISaveSystem.Save<T>(int userId, string fileName, T data)
+    {
+        await ((ISaveSystem)this).Save(userId, "Saves", fileName, data);
+    }
 
-    void ISaveSystem.Save<T>(string fileName, T data)
+    async Task ISaveSystem.Save<T>(int userId, string dirName, string fileName, T data)
     {
         CreateSaveDirectory();
 

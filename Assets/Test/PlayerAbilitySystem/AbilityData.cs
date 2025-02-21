@@ -5,12 +5,13 @@ public enum AbilityType
     WallClimb
 }
 
-[System.Serializable]
+
+[System.Serializable,JsonKey("AbilityDataKey")]
 public class AbilityData
 {
-    public bool DashUnlocked;
-    public bool DoubleJumpUnlocked;
-    public bool WallClimbUnlocked;
+    public bool DashUnlocked { get; set; }
+    public bool DoubleJumpUnlocked { get; set; }
+    public bool WallClimbUnlocked { get; set; }
 
     public AbilityData()
     {

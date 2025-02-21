@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class AbilityHandler : MonoBase
 {
-    private  const string AbilityDataFileName = "AbilityData";
+    private const string AbilityDataFileName = "AbilityData";
 
     [FieldRequiresSelf, HideInInspector] private Actor _actor;
     [Inject] private ISaveSystem _saveSystem;
@@ -20,7 +20,7 @@ public class AbilityHandler : MonoBase
 
     private async void Start()
     {
-        _abilityData = await _saveSystem.Load<AbilityData>(AbilityDataFileName);
+        _abilityData = await _saveSystem.Load<AbilityData>(GetUserID(), AbilityDataFileName);
         InitializeAbilities();
     }
 
@@ -71,6 +71,11 @@ public class AbilityHandler : MonoBase
 
     private void OnApplicationQuit()
     {
-        _saveSystem.Save(AbilityDataFileName, _abilityData);
+        _saveSystem.Save(GetUserID(), AbilityDataFileName, _abilityData);
+    }
+
+    private int GetUserID()
+    {
+        return 0;
     }
 }
