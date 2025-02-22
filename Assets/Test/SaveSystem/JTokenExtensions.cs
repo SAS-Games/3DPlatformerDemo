@@ -31,11 +31,12 @@ public static class JTokenExtensions
             var keys = type.GetCustomAttribute<JsonKeyAttribute>().Keys;
             foreach (var key in keys)
             {
-                // Mimic FirstOrDefault behavior: first type with the key wins
-                if (!_keyTypeCache.ContainsKey(key))
+                if (_keyTypeCache.ContainsKey(key))
                 {
-                    _keyTypeCache[key] = type;
+                    throw new InvalidOperationException(
+                        $"Root key '{key}' is ambiguous between {_keyTypeCache[key]} and {type}");
                 }
+                _keyTypeCache[key] = type;
             }
         }
     }
