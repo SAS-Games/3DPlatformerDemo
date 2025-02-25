@@ -18,8 +18,28 @@ MonoBehaviour:
     m_Type: SAS.SceneManagement.SceneLoader, AssemblyUtilities, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     m_Tag: 0
+    m_ExcludedPlatforms: 
   - m_Interface: ISaveSystem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     m_Type: JsonFileSaveSystem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     m_Tag: 0
+    m_ExcludedPlatforms: 0500000006000000
+  - m_Interface: ISaveSystem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_Type: SaveDataSaveSystem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_Tag: 0
+    m_ExcludedPlatforms: 0000000001000000020000000300000004000000070000000800000009000000
+  - m_Interface: ISaveSystem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_Type: JsonFileSaveSystem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_Tag: 1
+    m_ExcludedPlatforms: 0500000006000000
+  - m_Interface: ISaveSystem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_Type: SaveDataSaveSystem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_Tag: 1
+    m_ExcludedPlatforms: 0000000001000000020000000300000004000000070000000800000009000000
