@@ -40,18 +40,14 @@ public class JsonFileSaveSystem : ISaveSystem
 
             if (!string.IsNullOrWhiteSpace(json))
             {
-                var jObject = JsonConvert.DeserializeObject<JObject>(json);
-                // Check if T is Dictionary or object
-                if (typeof(T) == typeof(Dictionary<string, object>))
+                var settings = new JsonSerializerSettings
                 {
-                    var result = jObject.ToObjectRecursive();
-                    return (T)result;
-                }
+                    TypeNameHandling = TypeNameHandling.Auto
+                };
 
-                // For all other types
-                T data = JsonConvert.DeserializeObject<T>(json);
+                T data = JsonConvert.DeserializeObject<T>(json, settings);
                 if (data != null)
-                    return data; ;
+                    return data;
             }
         }
 
@@ -73,7 +69,13 @@ public class JsonFileSaveSystem : ISaveSystem
                 Directory.CreateDirectory(directoryPath);
 
             string filePath = Path.Combine(directoryPath, fileName + ".json");
-            string json = JsonConvert.SerializeObject(data, Formatting.Indented);
+            // Include type information when serializing
+            var settings = new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.Auto,
+                Formatting = Formatting.Indented
+            };
+            string json = JsonConvert.SerializeObject(data, settings);
 
             await File.WriteAllTextAsync(filePath, json);
         }
