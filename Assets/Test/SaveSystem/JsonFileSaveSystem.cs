@@ -28,7 +28,15 @@ public class JsonFileSaveSystem : ISaveSystem
 
         if (File.Exists(filePath))
         {
-            string json = await File.ReadAllTextAsync(filePath);
+            string json = string.Empty;
+            try
+            {
+                json = await File.ReadAllTextAsync(filePath);
+            }
+            catch (Exception ex)
+            {
+                Debug.LogException(ex);
+            }
 
             if (!string.IsNullOrWhiteSpace(json))
             {
