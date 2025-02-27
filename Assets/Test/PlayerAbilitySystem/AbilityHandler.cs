@@ -7,20 +7,24 @@ using UnityEngine;
 
 public class AbilityHandler : MonoBase
 {
-    private const string AbilityDataFileName = "AbilityData";
+    private const string FileName = "AbilityData";
+    private const string DirName = "AbilityDataDir";
 
-    [FieldRequiresSelf, HideInInspector] private Actor _actor;
+    [FieldRequiresSelf] private Actor _actor;
     [Inject] private ISaveSystem _saveSystem;
+    [Inject] IUserModel _userModel;
     private AbilityData _abilityData;
 
     private void Awake()
     {
-        this.InjectFieldBindings();
+        this.Initialize();
     }
 
     private async void Start()
     {
-        _abilityData = await _saveSystem.Load<AbilityData>(GetUserID(), AbilityDataFileName);
+        _abilityData = await _saveSystem.Load<AbilityData>(GetUserID(), DirName, FileName);
+        if (_abilityData == null )
+            _abilityData = new AbilityData();
         InitializeAbilities();
     }
 
@@ -71,11 +75,19 @@ public class AbilityHandler : MonoBase
 
     private void OnApplicationQuit()
     {
-        _saveSystem.Save(GetUserID(), AbilityDataFileName, _abilityData);
+        _saveSystem.Save(GetUserID(), DirName, FileName, _abilityData);
     }
+
+#if UNITY_PS5
+    private void OnApplicationFocus(bool focus)
+    {
+        if (!focus)
+            _saveSystem.Save(GetUserID(), DirName, FileName, _abilityData);
+    }
+#endif
 
     private int GetUserID()
     {
-        return 0;
+        return _userModel.GetActiveUserId();
     }
-}
+} 
