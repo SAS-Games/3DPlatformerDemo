@@ -34,5 +34,5 @@ MonoBehaviour:
   - m_Interface: IUserModel, AssemblyUtilities, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     m_Type: UserModel, AssemblyUtilities, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    m_Tag: 1
+    m_Tag: 0
     m_ExcludedPlatforms: 0500000006000000
