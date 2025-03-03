@@ -2,7 +2,7 @@ public enum AbilityType
 {
     Dash,
     DoubleJump,
-    WallClimb
+    Climb
 }
 
 public class AbilityData

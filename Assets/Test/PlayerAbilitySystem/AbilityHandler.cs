@@ -15,6 +15,8 @@ public class AbilityHandler : MonoBase
     [Inject] IUserModel _userModel;
     private AbilityData _abilityData;
 
+    public AbilityData AbilityData => _abilityData;
+
     private void Awake()
     {
         this.Initialize();
@@ -23,7 +25,7 @@ public class AbilityHandler : MonoBase
     private async void Start()
     {
         _abilityData = await _saveSystem.Load<AbilityData>(GetUserID(), DirName, FileName);
-        if (_abilityData == null )
+        if (_abilityData == null)
             _abilityData = new AbilityData();
         InitializeAbilities();
     }
@@ -34,7 +36,7 @@ public class AbilityHandler : MonoBase
         {
             { AbilityType.Dash, _abilityData.DashUnlocked },
             { AbilityType.DoubleJump, _abilityData.DoubleJumpUnlocked },
-            { AbilityType.WallClimb, _abilityData.WallClimbUnlocked }
+            { AbilityType.Climb, _abilityData.WallClimbUnlocked }
         };
 
         foreach (var ability in abilityMap)
@@ -49,29 +51,40 @@ public class AbilityHandler : MonoBase
         {
             AbilityType.Dash => _abilityData.DashUnlocked,
             AbilityType.DoubleJump => _abilityData.DoubleJumpUnlocked,
-            AbilityType.WallClimb => _abilityData.WallClimbUnlocked,
+            AbilityType.Climb => _abilityData.WallClimbUnlocked,
             _ => false
         };
     }
 
     public void UnlockAbility(AbilityType ability, bool status)
     {
+        var inputHandler = GetComponent<InputHandler>();
+
         switch (ability)
         {
             case AbilityType.Dash:
                 _abilityData.DashUnlocked = status;
+                inputHandler.EnableAbility(ability.ToString(), status);
                 break;
+
             case AbilityType.DoubleJump:
                 _abilityData.DoubleJumpUnlocked = status;
-                _actor.SetValue(new BlackboardKey(FSMCharacterBlackboardKey.MaxJumpCount), status ? 2 : 1);
-                _actor.SetValue(new BlackboardKey(FSMCharacterBlackboardKey.RemainingJumpCount), status ? 2 : 1);
-
+                int jumpCount = status ? 2 : 1;
+                _actor.SetValue(new BlackboardKey(FSMCharacterBlackboardKey.MaxJumpCount), jumpCount);
+                _actor.SetValue(new BlackboardKey(FSMCharacterBlackboardKey.RemainingJumpCount), jumpCount);
                 break;
-            case AbilityType.WallClimb:
+
+            case AbilityType.Climb:
                 _abilityData.WallClimbUnlocked = status;
+                inputHandler.EnableAbility(ability.ToString(), status);
+                break;
+
+            default:
+                Debug.LogWarning($"Unhandled ability: {ability}");
                 break;
         }
     }
+
 
     private void OnApplicationQuit()
     {
@@ -90,4 +103,4 @@ public class AbilityHandler : MonoBase
     {
         return _userModel.GetActiveUserId();
     }
-} 
+}
